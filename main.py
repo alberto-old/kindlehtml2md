@@ -8,7 +8,7 @@ PATH = './examples/How_to_study.html'
 
 def convert_html_to_markdown(input_path, output_path):
     print('Processing file ' + input_path + ' to generate ' + output_path)
-    soup = BeautifulSoup(open(PATH), 'html.parser')
+    soup = BeautifulSoup(open(input_path), 'html.parser')
 
     f = codecs.open(output_path, 'w', 'utf-8')
     
